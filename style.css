@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Rubik', sans-serif;
+    background-color: teal;
+}
+
+header {
+    text-align: center;
+    height: 200px;
+    background: url(images/pattern-bg.png) no-repeat center center / cover;
+    position: relative;
+}
+
+header h1 {
+    color: white;
+    font-weight: 500;
+    padding: 1em 0 .5em;
+    
+}
+
+header form {
+    display: flex;
+    justify-content: center;
+}
+
+header form input {
+    width: 400px;
+    padding: .8em 1em;
+    font-size: 17px;
+    font-family: 'Rubik';
+    border: none;
+    border-radius: 8px 0 0 8px;
+}
+
+header form button {
+    border: none;
+    background-color: black;
+    width: 40px;
+    border-radius: 0 8px 8px 0;
+}
+
+.data {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 1em;
+    align-items: center;
+    width: 80%;
+    height: 100px;
+    max-width: 1000px;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    z-index: 99999;
+}
+
+.data .box {
+    border-right: 1px solid rgb(223, 223, 223);
+    width: 100%;
+    text-align: left;
+    padding: 1em;    
+}
+.box:last-of-type {
+    border: none;
+}
+
+.box h4 {
+    font-size: 12px;
+    font-weight: 500;
+    color: #7e7e7e;
+    margin-bottom: .5em;
+}
+
+.box span {
+    font-weight: 500;
+    font-size: 20px;
+    color: hsl(0, 0%, 17%);
+}
+
+#mapid {
+    height: calc(100vh - 200px);
+    width: 100%;
+    will-change: unset;
+
+}
+
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    form {
+        width: 300px;
+        margin: auto;
+    }
+
+    form input::placeholder {
+        font-size: 13px;
+    }
+
+    form button {
+        padding: 0 .8em;
+    }
+
+
+    .data {
+        height: 250px;
+        width: 70%;
+        margin-top: 60px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        opacity: 0.89;
+        padding: 0;
+    }
+
+    .data .box {
+        padding: 0;
+        text-align: center;
+        border: none;
+    }
+
+    .data .box span {
+        font-size: 16px;
+    }
+
+    
+}

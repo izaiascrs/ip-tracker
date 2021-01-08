@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+  
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>IP Address Tracker</h1>
+      <form action="#">
+        <input type="text" placeholder="Search for any IP address or domain">
+        <button><img src="images/icon-arrow.svg" alt="arrow"></button>
+      </form>
+
+      <div class="data">
+        <div class="box ip">
+          <h4>  IP ADRESS</h4>
+        </div>
+
+        <div class="box location">
+          <h4>LOCATION</h4>
+        </div>
+
+        <div class="box timezone">
+          <h4>TIMEZONE</h4>
+        </div>
+
+        <div class="box isp">
+          <h4>ISP</h4>
+        </div>
+
+      </div>
+    </header>
+ </div>
+ 
+ <div id="mapid"></div>
+
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+ integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+ crossorigin=""></script>
+ <script src="main.js"></script>  
+ </body>
+</html>
