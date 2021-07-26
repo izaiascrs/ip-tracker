@@ -1,4 +1,4 @@
-## HTML5, CSS, JAVASCRIPT Challenge
+## HTML5, CSS, JAVASCRIPT
 
 ### Ip tracker 
 #### 
